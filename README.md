@@ -1,9 +1,4 @@
 
-  <img src="https://github.com/user-attachments/assets/6e08f668-ad55-4412-9706-07bdfd26bcbe
-
-" alt="Rust Logo" width="120" />
-
-
 <h1 align="center">MiniGrep 🦀</h1>
 
 <p align="center">
