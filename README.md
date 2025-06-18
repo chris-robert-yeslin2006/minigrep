@@ -1,5 +1,6 @@
 
-  <img src="[![image](https://github.com/user-attachments/assets/fbdf541f-f778-42dd-9a55-5ee0545b208f)](https://reposhub.com/rust/image-processing)
+  <img src="https://github.com/user-attachments/assets/6e08f668-ad55-4412-9706-07bdfd26bcbe
+
 " alt="Rust Logo" width="120" />
 
 
