@@ -1,7 +1,7 @@
-<p align="center">
+
   <img src="[![image](https://github.com/user-attachments/assets/fbdf541f-f778-42dd-9a55-5ee0545b208f)](https://reposhub.com/rust/image-processing)
 " alt="Rust Logo" width="120" />
-</p>
+
 
 <h1 align="center">MiniGrep 🦀</h1>
 
