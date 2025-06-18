@@ -1,32 +1,47 @@
 use std::env;
 use std::fs;
+use std::process;
+use std::error::Error;
 fn main() {
     //refactor read from file
     let args:Vec<String>=env::args().collect();
-
-    let config=Config::new(&args);
+    //this unwarap fn dont crash the pgrm but exit with code 1
+    let config=Config::new(&args).unwrap_or_else(|err|{
+        println!("problme parsing arguments:{}",err);
+        process::exit(1);
+    });
     println!("{:?}",config.query);
     println!("{:?}",config.filename);
 
-    let contents =fs::read_to_string(config.filename)
-        .expect("Something went wrong reading the file");
+    if let Err(e)=run(config){
+        print!("Application error: {}", e);
+        process::exit(1);
+    }
 
-    println!("{}",contents);
+    
     
 }
 
+//Box<dyn Error> to allow any kind of error type-wrapped
+fn run(config:Config)->Result<(),Box<dyn Error>>{
+    let contents =fs::read_to_string(config.filename)?;
+
+    println!("{}",contents);
+
+    Ok(())
+}
 struct Config{
     query:String,
     filename:String
 }
 impl Config{
-    fn new(args:&[String])-> Config {
+    fn new(args:&[String])->  Result<Config,&str> {
         if args.len()<3{
-            panic!("please provide query and filename");
+           return Err("not enougn args");
         }
     let query:String=args[1].clone();
     let filename:String=args[2].clone();
-    Config{query,filename}
+    Ok(Config{query,filename})
 }
 }
 
