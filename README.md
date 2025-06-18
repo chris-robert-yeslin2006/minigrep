@@ -1,9 +1,5 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rust-lang/logos/master/rust-logo-256x256-blk.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/rust-lang/logos/master/rust-logo-256x256.png">
-    <img alt="Rust logo" width="120" height="120" src="https://raw.githubusercontent.com/rust-lang/logos/master/rust-logo-256x256.png">
-  </picture>
+  <img src="https://raw.githubusercontent.com/rust-lang/logos/master/rust-logo-512x512.png" alt="Rust Logo" width="120" />
 </p>
 
 <h1 align="center">MiniGrep 🦀</h1>
@@ -112,4 +108,4 @@ Writing unit tests in Rust
 📄 License
 This project is licensed under the MIT License.
 
-<p align="center"> Made with ❤️ in Rust </p> ```
+<p align="center" >Made with ❤️ in Rust </p> 
