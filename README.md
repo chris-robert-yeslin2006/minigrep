@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/rust-lang/logos/master/rust-logo-512x512.png" alt="Rust Logo" width="120" />
+  <img src="[https://raw.githubusercontent.com/rust-lang/logos/master/rust-logo-512x512.png](https://reposhub.com/rust/image-processing)" alt="Rust Logo" width="120" />
 </p>
 
 <h1 align="center">MiniGrep 🦀</h1>
